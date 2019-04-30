@@ -1,0 +1,20 @@
+h1{
+    color:#A80A0F;
+   text-align: center;
+    font-family: Symbola;
+    font-size: 60px;
+}
+h2{
+    color: chocolate;
+    font-family: Chilanka;
+    font-size: larger;
+}
+body{
+    background-color:#494949;
+}
+.my {
+    color: lightseagreen;
+}
+a{
+    color: blue;
+}

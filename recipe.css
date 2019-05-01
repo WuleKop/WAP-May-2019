@@ -21,9 +21,7 @@ body{
 a{
     color:#A4A400;
 }
-hr{
-    color: #A8AD0F ;
-}
+
 abbr{
     text-decoration:underline;
 }
@@ -31,6 +29,10 @@ blockquote{
     background-color:#FFFFA8;
     font-style: italic;
 }
-.myAlign{
+.right {
+    float: right;
+
+}
+pre{
     text-align: right;
 }

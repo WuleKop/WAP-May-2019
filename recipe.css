@@ -1,0 +1,36 @@
+h1,h2{
+    color: #A4A400;
+    text-align: center;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode",Helvetica,Arial,sans-serif;
+    font-size: 22pt;
+    font-weight: bold;
+    text-decoration: underline ;
+
+}
+h2{
+    text-align: left;
+    font-size: 18pt;
+}
+body{
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia,Garamond,Serif;
+}
+a{
+    color:#A4A400;
+}
+hr{
+    color: #A8AD0F ;
+}
+abbr{
+    text-decoration:underline;
+}
+blockquote{
+    background-color:#FFFFA8;
+    font-style: italic;
+}
+.myAlign{
+    text-align: right;
+}

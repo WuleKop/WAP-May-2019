@@ -15,9 +15,28 @@ body{
 .my {
     color: lightseagreen;
 }
-a{
-    color: blue;
+
+a:link {
+    color: aqua;
+    text-decoration: none;
 }
+
+a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active {
+    color:green;
+    text-decoration: underline;
+}
+
+
 p.intro::first-letter{
     font-size: 200%;
 }

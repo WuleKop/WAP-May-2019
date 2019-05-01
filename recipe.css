@@ -17,6 +17,7 @@ body{
     color: #404040;
     font-size: 11pt;
     font-family: Georgia,Garamond,Serif;
+    background-image: url("images/silverware.jpg");
 }
 a{
     color:#A4A400;
@@ -35,4 +36,7 @@ blockquote{
 }
 pre{
     text-align: right;
+}
+ul{
+    list-style-image: url("images/pie_icon.gif");
 }

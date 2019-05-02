@@ -1,0 +1,29 @@
+fieldset{
+    width: 600px;
+    background-color: lightsteelblue;
+    margin-left: 100px;
+    border-radius: 12px;
+}
+.new{
+    background-color: white;
+    border: 1px grey solid;
+}
+.sp{
+    font-weight: bold;
+    width: 150px;
+    display: inline-block;
+    margin: auto;
+    padding-top: 8px;
+}
+.sb{
+    font-weight: bold;
+    font-size: 16px;
+    background-color:#E89A99;
+   }
+a{
+    color: red;
+    text-decoration: none;
+}
+.aa{
+    margin-left: 100px;
+}

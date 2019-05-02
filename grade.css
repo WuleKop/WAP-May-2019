@@ -1,0 +1,25 @@
+p{
+    display: inline-block;
+    width: 100px;
+    margin: auto;
+    padding-top: 10px;
+}
+div{
+    display: inline-block;
+    margin: auto;
+    padding-top: 10px;
+}
+fieldset{
+    width: 800px;
+    margin-left: 100px;
+    border-radius: 15px;
+    background-color:#BA9554 ;
+}
+legend{
+    background-color: #BA9554;
+    color: white;
+    border-radius: 5px;
+}
+.aa{
+    margin-left: 100px;
+}

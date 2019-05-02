@@ -7,7 +7,7 @@ header{
     background-image: url("ImagesLab2/bannerbg.png");
 }
 img.header{
-     margin-left: 100pt;
+     margin-left: 200pt;
 }
 h1{
     text-align: center;
@@ -61,8 +61,14 @@ h1{
 
 .left{
     float: left;
+    padding-right: 5px;
     overflow: auto;
  }
+.left2{
+    float: left;
+    overflow: auto;
+}
+
 .right{
     float: right;
 }

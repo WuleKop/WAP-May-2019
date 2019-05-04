@@ -6,8 +6,26 @@
 </head>
 <body>
 <h1>Servlet Introduction Quiz</h1>
-<p>Q1. What is the difference between a web server and a web container?</p>
-<p>A1. </p>
+<p style="color: red" >Q1. What is the difference between a web server and a web container?</p>
+<p style="color: blue">A1. A Web server is an execution infrastructure that handles HTTP requests and responses and a web container is part of a web server that manages the components like Servlets, JSP. </p>
+<p style="color: red">Q2. What is a servlet?</p>
+<p style="color: blue">A2. Servlets are the Java programs that runs on the Java-enabled web server or application server. They are used to handle the request obtained from the web server, process the request,
+    produce the response, then send response back to the web server. </p>
+<p style="color: red">Q3. How do web servers and web containers interact with servlets?</p>
+<p style="color: blue">A3. Web containers interact with servlets by calling a service method on HttpServlet object in a thread. </p>
+<p style="color: red">Q4. Who creates request objects?</p>
+<p style="color: blue">A4. First the client creates request by using browsers then the web container creates HttpServletRequest and HttpServletResponse for the servlet. </p>
+<p style="color: red">Q5. What are the states in the servlet lifecycle?</p>
+<p style="color: blue">A5. The states of servlet life cycle are instantiation, intialization(init()), implementation(service()) and destruction(destroy()). </p>
+<p style="color: red">Q6. Who calls init and when?</p>
+<p style="color: blue">A6. The Container calls init() on the servlet instance after the servlet instance is created but before the servlet can service any client requests. </p>
+<p style="color: red">Q7. Which of init, service, and doGet should you override?</p>
+<p style="color: blue">A7. We may override init() in some cases, but we should always override doGet. </p>
+<p style="color: red">Q8. In what sense are servlets multi-threaded?</p>
+<p style="color: blue">A8. A Java servlet container / web server is typically multithreaded. That means, that multiple requests to the same servlet may be executed at the same time. </p>
+<p style="color: red">Q9. What are the implications of this for servlet instance variables?</p>
+<p style="color: blue">A9. If our servlet does not have any static or member variable then no need to worry and the servlet is thread safe. If our servlet just reads the instance variable then the servlet
+    is thread safe. If we need to modify the instance or static variables , update it in a synchronized block while holding a lock on Servlet instance. </p>
 
 </body>
 </html>

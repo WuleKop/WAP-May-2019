@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>State Management Quiz</title>
+</head>
+<body>
+<h1>State Management Quiz</h1>
+<p style="color: red" >Q1. Can post requests be bookmarked? What are the problems?</p>
+<p style="color: blue">A1. An HTTP POST can be bookmarked, but since a bookmark only consists of the URL, all of the form parameters will be lost.
+    This will often mean that the web server doesn't know what to do with the request, since it was expecting some form parameters. </p>
+<p style="color: red">Q2. What is the purpose of request dispatching?</p>
+<p style="color: blue">A2. The purpose of request dispatching is dispatching requests to any resource (such as HTML, Image, JSP, Servlet etc.) on the server via  Request Dispatcher interface. </p>
+<p style="color: red">Q3. What is the difference between redirect and request dispatch?</p>
+<p style="color: blue">A3. I redirect; request is redirected to client (Browser) and it will process the new URL, end User can see on which page url is redirected and processing is done at client side.
+   In dispatch; servlet will internally forward the request to another servlet or jsp page, end user don’t know that which page is processed internally and processing is done at server side. </p>
+<p style="color: red">Q4. What is an attribute ?</p>
+<p style="color: blue">A4.An attribute is an object that is used to share information in a web app, it allows Servlets to share information among themselves. </p>
+<p style="color: red">Q5.What is the difference between attributes and parameters?</p>
+<p style="color: blue">A5. Parameters may come into our application from the client request, or may be configured through deployment descriptor (web.xml) elements or their corresponding annotations.
+    Attributes are objects that are attached to various scopes and can be modified, retrieved or removed. Parameters are read only, attributes are read/write objects. And parameters are String objects,
+    attributes can be objects of any type.</p>
+<p style="color: red">Q6. What are dangers of using attributes?</p>
+<p style="color: blue">A6. Context and session attributes are not thread safe.  </p>
+<p style="color: red">Q7. What does it mean to say that http is stateless? Give an example of a stateful protocol.</p>
+<p style="color: blue">A7. Http protocol is stateless in a sense that it does not require the server to retain information or status about each user for the duration of multiple requests. FTP is an example of stateful
+protocol and Http can be assumed stateful by using cookies.</p>
+<p style="color: red">Q8. Give 5 different methods for maintaining state information (count each attribute scope as one method).</p>
+<p style="color: blue">A8. 5 different methods to maintain state are:
+<ol style="color: blue"> <li> request scope: destroyed when servlet finishes processing request </li>
+    <li> session scope: destroyed when user closes browser</li>
+    <li> application scope destroyed when the container stopped.</li>
+    <li> Cookies saved on browser, either temporary (deleted when the browser closes) or permanent </li>
+    <li> Hidden fields on a form </li> </ol> </p>
+<p style="color: red">Q9. How long does a session last?</p>
+<p style="color: blue">A9. A session can last for the period of session-timeout set by the DD(web.xml) or the setMaxInactiveInterval method set by the programmer. Also session can be invalidated manually by the
+    programmer after completing some tasks.</p>
+<p style="color: red" >Q10. What is a cookie, and how long does a cookie last?</p>
+<p style="color: blue">A10. A cookie is a small piece of data stored on the client-side which servers use when communicating with clients. A cookie can last for a period of time configured by the programmer
+by a method setMaxAge().</p>
+<p style="color: red" >Q11. What is the purpose of URL rewriting?</p>
+<p style="color: blue">A11. Url rewriting is a process of appending or modifying any url structure while loading a page. If our browser does not support cookies, URL rewriting provides us with another
+    session tracking alternative.  </p>
+<p style="color: red" >Q12. Why does the request attribute report ‘null’ for the maintaining state demo?</p>
+<p style="color: blue">A12. Because as soon as the server has finished generating the response for the request, the request doesn't exist anymore.  </p>
+
+</body>
+</html>

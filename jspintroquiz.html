@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSP Intro Quiz</title>
+</head>
+<body>
+<h1>JSP Introduction Quiz</h1>
+<p style="color: red" >Q1. What is the main value of Java Server Pages?</p>
+<p style="color: blue">A1. JavaServer Pages(JSP) is a complimentary technology to Java Servlet for developing Web pages that supports dynamic content.It helps us to insert java code in HTML pages by making use of special JSP tags.</p>
+<p style="color: red">Q2. How are JSP pages related to servlets? </p>
+<p style="color: blue">A2. JSPs are always compiled in to servlets. </p>
+<p style="color: red">Q3. How are JSP pages related to HTML?</p>
+<p style="color: blue">A3.JSP are actually an HTML file that allows dynamic content by embedding java programming. </p>
+<p style="color: red">Q4. Give an example of a JSP scriptlet and show how it will look in the JSP servlet.</p>
+<p style="color: blue">A4. A scriptlet tag is used to execute java source code in JSP and inside JSP it looks like this <span style="color: black"><% int i=6; int k=i+10; %></span>.</p>
+<p style="color: red">Q5. Give an example of a JSP declaration and show how it will look in the JSP servlet.</p>
+<p style="color: blue">A5. We can declare static member, instance variable and methods inside Declaration Tag and inside JSP it look like this <span style="color: black"><%! int count=0; %></span>.</p>
+<p style="color: red">Q6. Give an example of a JSP comment and show how it will look in the JSP servlet.</p>
+<p style="color: blue">A6. Inside JSP a comment looks like this <span style="color: black"><%-- This is a JSP comment --%></span>. </p>
+<p style="color: red">Q7. Give an example of a JSP expression and show how it will look in the JSP servlet.</p>
+<p style="color: blue">A7. Expression Tag is used to print out java language expression that is put between the tags and inside JSP it looks like this <span style="color: black"><%= (2*5) %></span>. </p>
+<p style="color: red">Q8. Give an example of a JSP directive and show how it will look in the JSP servlet.</p>
+<p style="color: blue">A8. Directive Tag gives special instruction to Web Container at the time of page translation and inside JSP it looks like this <span style="color: black"><%@ page import="java.util.Date" %></span> or
+    <span style="color: black"><%@ include file="label.jsp" %></span> or <span style="color: black"><%@ taglib prefix='c' uri='http://java.sun.com/jsp/jstl/core' %></span>. </p>
+<p style="color: red">Q9. Explain how an EL expression is evaluated.</p>
+<p style="color: blue">A9. EL can be evaluated in two ways, i.e as attribute values in standard and custom tags and as output in HTML tag.   </p>
+<p style="color: red">Q10. Explain how servlet attributes are involved in EL expressions.</p>
+<p style="color: blue">A10. If our servlet set the attributes in any scope (request, session etc), the attribute can be accessed inside the JSP by the name only without mentioning the scopes (scopes are implicit for the JSP) .</p>
+<p style="color: red">Q11. Explain how servlets and JSPs use request dispatch to interact.</p>
+<p style="color: blue">A11. Servlets uses the JSP as a view to implement the MVC architecture and the RequestDispatcher object of the servlet can forward the request to the JSP by mentioning the JSP name only (name.jsp). </p>
+
+
+</body>
+</html>

@@ -7,21 +7,21 @@
 <body>
 <h1>JSP Custom Tags Quiz</h1>
 <p style="color: red" >Q1. Rewrite the JSP page in the first demo (forEach) to use scripting instead of the JSTL forEach.</p>
-<p style="color: blue">A1. </p>
+<p style="color: blue">A1. <table ><%Student [] student=(Student)request.getParameterValues("students"); for(int i=0;i&lt;student.length;i++) {<tr> <td><%=student[i].getName()%></td><td><%=student[i].getAge()%>%></td></tr></table></p>
 <p style="color: red">Q2. How do custom tags relate to JSTL? </p>
-<p style="color: blue">A2. </p>
+<p style="color: blue">A2. By defining our tags in tag library discriptor(TLD). </p>
 <p style="color: red">Q3. What is the role of the URI in the TLD and the taglib directive?</p>
 <p style="color: blue">A3.The URI in the taglib directive specifies where to find the tag library description file. </p>
 <p style="color: red">Q4. What is a tag handler class?</p>
 <p style="color: blue">A4. A tag handler class is a class that extend SimpleTagSupport class and override the doTag() method, where we can place our code to generate content for the custom tag.</p>
 <p style="color: red">Q5. What is the role of attribute setters in a tag handler class?</p>
-<p style="color: blue">A5. </p>
+<p style="color: blue">A5. To set the value of attributes in java classes. </p>
 <p style="color: red">Q6. What is the role of the doTag() method in a tag handler class?</p>
-<p style="color: blue">A6.  </p>
+<p style="color: blue">A6. Defining what the tag definition (defining the purpose of the custom tag prefix). </p>
 <p style="color: red">Q7. What does the operation getJspContext().getOut().write(“Hi Bob”) do when called in a doTag() method?</p>
-<p style="color: blue">A7. </p>
+<p style="color: blue">A7. It prints "Hi bob" to the screen.</p>
 <p style="color: red">Q8. What does the operation getJspBody().invoke(null) do when called in a doTag() method?</p>
-<p style="color: blue">A8. </p>
+<p style="color: blue">A8. It outputs the body content of the tag. </p>
 
 
 </body>

@@ -30,12 +30,12 @@ function myDecoration2() {
 function malkovich() {
     var text=document.getElementById("area").value;
     var textArray=text.split(" ");
-    var result=textArray[0];
-    for (let i = 1; i < textArray.length; i++) {
+    var result="";
+    for (let i = 0; i < textArray.length; i++) {
             if(textArray[i].length>=5){
                 textArray[i]="Malkovitch";
             }
-            result+=(" "+textArray[i]);
+            result+=(textArray[i]+" ");
 
         }
     document.getElementById("area").value=result;

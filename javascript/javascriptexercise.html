@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Exercises</title>
+</head>
+<body>
+<h1>Javascript Exercises</h1>
+<p style="color: red" >Q1. What is the difference between the following 2 statements? <br>
+   <span style="color: black;">setTimeout(booyah, 2000);<br>
+       setTimeout(booyah(), 2000);</span></p>
+<p style="color: blue">A1. The second one calls the function booyah immediately rather than wait 2000ms</p>
+<p style="color: red">Q2. What do the following 2 alerts display (answer without running the code)? <br>
+    <span style="color: black;">var myfunc = function(a, x) {<br>
+    return a * x;<br>
+    };<br>
+    var x = myfunc(2, 3);<br>
+    var y = myfunc;<br>
+    alert(x);<br>
+        alert(y(2,3));</span></p>
+<p style="color: blue">A2. 6. </p>
+<p style="color: red">Q3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says "BOOYAH!"<br>
+   <span style="color: black"> setTimeout(booyah1, 2000);<br>
+       setTimeout(booyah2(), 2000);</span></p>
+<p style="color: blue">A3. The first Function: <br>
+<span style="color: black">function booyah1(){<br>
+    alert("BOOYAH");<br>
+    }</span><br>
+    The Second Function:<br>
+    <span style="color:black;">function booyah2() {<br>
+    setTimeout(booyah3,2000);<br>
+    }<br>
+    function booyah3() {<br>
+    alert("BOOYAH");<br>
+        }</span>
+</p>
+<p style="color: red">Q4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?</p>
+<p style="color: blue">A4. Unobstructive Javascript is a Javascript code that is not embedded (separated) from the HTML code. The Javascript code can only be attached at the head of the HTML by using the script tag.<br>
+    Its main application is to facilitate progressive enhancement and separation of functionality from content/presentation.</p>
+</body>
+</html>

@@ -1,5 +1,7 @@
-var i=0;
+let i=0;
+/**Set the text area fontsize*/
 function fontsize() {
+    "use strict";
     let getFontSelect = document.getElementById("fontSelect").value;
     let getArea=document.getElementById("tArea");
     if(getFontSelect==="t"){
@@ -16,14 +18,15 @@ function fontsize() {
         getArea.style.fontSize=16+"pt";
     }
     else if(getFontSelect==="e"){
-        getArea.style.fontSize=24+"pt"
+        getArea.style.fontSize=24+"pt";
     }
     else {
         getArea.style.fontSize=32+"pt";
     }
 }
 
-var timer=null;
+let timer=null;
+/**Start the Animation*/
 function start(time=250) {
     document.getElementById("stp").disabled=false;
     document.getElementById("strt").disabled=true;
@@ -33,6 +36,7 @@ function start(time=250) {
     }
     timer=setInterval(fieldAnimations,time);
 }
+/**Stop the animation*/
 function stop() {
     document.getElementById("stp").disabled=true;
     document.getElementById("strt").disabled=false;
@@ -41,8 +45,9 @@ function stop() {
     timer=null;
     i=0;
 }
+/**Speed up the animation*/
 function turbo() {
-    var checkbx=document.getElementById("chkbox").checked;
+    let checkbx=document.getElementById("chkbox").checked;
     if(timer!==null) {
         if (checkbx === true) {
             start(50);
@@ -51,7 +56,9 @@ function turbo() {
         }
     }
 }
+/**Seelect animation types*/
 function fieldAnimations() {
+    "use strict";
     let getAnimSelect = document.getElementById("animSelect").value;
     let getArea2=document.getElementById("tArea");
 
@@ -94,11 +101,6 @@ function fieldAnimations() {
         else {
             i=0;
         }
-    }
-    else if (getAnimSelect==="custom") {
-
-    }
-    else {
     }
 }
 

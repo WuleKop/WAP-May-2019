@@ -98,6 +98,6 @@
     document.getElementById("animSelect").onchange = fieldAnimations;
     document.getElementById("fontSelect").onchange = fontsize;
     document.getElementById("chkbox").onclick = turbo;
-})();
+}());
 
 

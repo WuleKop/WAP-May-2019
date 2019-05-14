@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>ASCIImation</title>
     <link type="text/css" rel="stylesheet" href="ascii.css">
-    <script src="ascii.js"></script>
-    <script src="animation.js"></script>
 </head>
 <body>
 <h1>CS472: ASCII Animation Viewer</h1>
@@ -16,12 +14,12 @@
     <div class="div2">
         <fieldset>
         <legend>Play Controls:</legend>
-            <button id="strt" onclick="start();">Start</button> <button id="stp" onclick="stop();" disabled>Stop</button>
+            <button id="strt">Start</button> <button id="stp" disabled>Stop</button>
     </fieldset>
     <fieldset>
         <legend>Animation:</legend>
         <label>
-            <select id="animSelect" onchange="fieldAnimations();">
+            <select id="animSelect">
                 <option value="blank" selected>Blank</option>
                 <option value="exercise">Exercise</option>
                 <option value="juggler">Juggler</option>
@@ -34,7 +32,7 @@
     <fieldset>
         <legend>Size:</legend>
         <label>
-            <select id="fontSelect" onchange="fontsize();">
+            <select id="fontSelect">
                 <option value="t">Tiny</option>
                 <option value="s">Small</option>
                 <option value="m" selected>Medium</option>
@@ -46,7 +44,7 @@
     </fieldset>
     <fieldset>
         <legend>Speed:</legend>
-        <label><input type="checkbox" id="chkbox" onclick="turbo();">Turbo</label>
+        <label><input type="checkbox" id="chkbox" >Turbo</label>
     </fieldset>
     </div>
    <div class="aclass">
@@ -58,5 +56,7 @@
            <img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" />
        </a></div>
 </div>
+<script src="ascii.js"></script>
+<script src="animation.js"></script>
 </body>
 </html>

@@ -6,28 +6,29 @@
 </head>
 <body>
 <h1>Javascript Scope Exercises</h1>
-<p style="color: red" >Q1. Determine what this Javascript code will print out (without running it): <br>
-   <span style="color: black"> x= 1;<br>
-    var a = 5;<br>
-    var b = 10;<br>
-    var c = function(a, b, c) {<br>
-    var x = 10;<br>
-    document.write(x);<br>
-    document.write(a);<br>
-    var f = function(a, b, c) {<br>
-    b = a;<br>
-    document.write(b);<br>
-    b = c;<br>
-    var x = 5;<br>
-    }<br>
-    f(a,b,c);<br>
-    document.write(b);<br>
-    }<br>
-    c(8,9,10);<br>
-    document.write(b);<br>
-    document.write(x);<br>
+<p style="color: red" >Q1. Determine what this Javascript code will print out (without running it): </p>
+   <pre style="color: black">
+    x= 1;
+    var a = 5;
+    var b = 10;
+    var c = function(a, b, c) {
+    var x = 10;
+    document.write(x);
+    document.write(a);
+    var f = function(a, b, c) {
+              b = a;
+              document.write(b);
+              b = c;
+              var x = 5;
     }
-   </span></p>
+    f(a,b,c);
+    document.write(b);
+    }
+    c(8,9,10);
+    document.write(b);
+    document.write(x);
+    }
+   </pre>
 <p style="color: blue">A1.10 8 8 9 10 1 </p>
 <p style="color: red">Q2. What is the difference between a method and function? <br>
 <p style="color: blue">A2. Function is a set of code to do some task in JavaScript. Method is also a function which is used as a property in Object. </p>

@@ -11,7 +11,6 @@
                 i = true;
                 j=true;
             }
-
         });
         $(".boundary").mouseover(function () {
             if(!j) {

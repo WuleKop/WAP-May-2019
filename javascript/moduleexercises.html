@@ -30,7 +30,7 @@
     }
   </pre>
 <p style="color: blue">A1. undefined 8 8 9 10 1 </p>
-<p style="color: red">Q2. Define Global Scope and Local Scope in Javascript. </p>
+<p style="color: red">Q2. Define Global Scope and Local Scope in Javascript. (...inside function and outside) </p>
 <p style="color: blue">A2. Global scope is a scope where anyone anywhere can access our code (variables or functions). Local scope is limited to the scope of our javascript code either inside modules or functions. </p>
 <p style="color: red">Q3. Consider the following structure of Javascript code:</p>
 <pre >// Scope A
@@ -152,11 +152,11 @@ var Employee = (function () {
     let getName=function () {
         return name;
     };
-    let increaseSalary=function (percentage) {
+    var increaseSalary=function (percentage) {
         let s=getSalary();
        return s+=((s*percentage)/100);
     };
-    let incrementAge=function () {
+    var incrementAge=function () {
         let ag=getAge();
         return ag++;
     };
@@ -274,12 +274,12 @@ var Employee = (function () {
         incrementAge:incrementAge
     };
 })();
-var address;
+Employee.address="";
 Employee.setAddress = function (newAddress) {
-    address=newAddress;
+    this.address=newAddress;
 };
 Employee.gerAddress = function () {
-    return address;
+    return this.address;
 };</pre>
 <p style="color: red">Q14. What is the output of the following code?</p>
 <pre>

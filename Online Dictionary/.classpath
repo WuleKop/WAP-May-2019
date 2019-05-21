@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.16/src/build/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.16/src/demo/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.16/src/generated/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.16/src/legacy/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.16/src/main/core-api/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.16/src/main/core-impl/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.16/src/main/protocol-impl/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.16/src/main/user-api/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.16/src/main/user-impl/java"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-8.0.16/src/test/java"/>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/javax.servlet.jsp.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/mysql-connector-java-5.1.47.jar"/>
+	<classpathentry kind="lib" path="lib/javax.servlet.jsp.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="build/web/WEB-INF/classes"/>
+</classpath>
